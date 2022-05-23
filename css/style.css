@@ -59,6 +59,10 @@ input[type=submit]:hover {
     background-color: #f11084;
 }
 
+input[type=submit]:disabled {
+    background-color: #666666;
+}
+
 .vcenter {
     display: flex;
     align-items: center;
@@ -133,12 +137,12 @@ li {
 }
 
 #modal {
-    position: absolute;
+    position: fixed;
     display: block;
     overflow: hidden;
     margin: auto;
     z-index: 2000;
-    top: 2000px;
+    margin-top: 10%;
 }
 
 #modal-content {
