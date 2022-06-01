@@ -12,28 +12,6 @@ $( document ).ready(function() {
     $("#modal-content").hide();
     $("#modal").hide();
     $('#subscribe').prop('disabled', true);
-    $("#subscribe").click(function () {
-        $.ajax({
-            type: "GET",
-            url: 'https://oncloudnine.cloud/gateway.php',
-            data: {
-                'firstname': $('#firstname').val(),
-                'lastname' : $('#lastname').val(),
-                'email': $('#email').val(),
-            },
-            contentType: 'application/json',
-            dataType: 'jsonp',
-            success: function(result){
-                $("#modal-content").show();
-                $("#modal").show();
-            },
-            error: function(result) {
-                $("#modal-content").show();
-                $("#modal").show();
-            },
-        })
-    });
-
     $(".inputes").change(function() {
            if($("#chbx1").is(':checked') && $("#chbx2").is(':checked') && isName($("#firstname").val()) && isName($("#lastname").val()) && isEmail($("#email").val())) {
                $('#subscribe').prop('disabled', false);
