@@ -23,12 +23,12 @@ body {
 }
 
 .input {
-    width: 504px !important;
-    height: 75px !important;
+    width: 506px !important;
+    height: 50px !important;
     border-radius: 10px !important;
     font-family: TeleNeo !important;
     color: black !important;
-    font-size: 20pt !important;
+    font-size: 12pt !important;
 }
 
 .ml-min-30 {
@@ -36,8 +36,8 @@ body {
 }
 
 input[type=checkbox] {
-    width: 40px;
-    height: 35px;
+    width: 22px;
+    height: 18px;
     border-radius: 4px !important;
     background-color: #ededed;
     cursor: pointer;
@@ -73,6 +73,11 @@ span {
     font-size: 12pt;
 }
 
+li,b {
+    font-family: TeleNeoBold;
+    font-size: 25pt;
+}
+
 span.required {
     font-size: 14pt;
 }
@@ -94,6 +99,14 @@ li {
     margin-top: 48px;
 }
 
+.txt1b {
+    font-family: TeleNeoBold;
+    line-height: 35px;
+    font-size: 25pt;
+    font-weight: 600;
+    margin-top: 48px;
+}
+
 .txt2 {
     font-family: TeleNeoExtraBold;
     line-height: 60px;
@@ -104,10 +117,9 @@ li {
 
 .txt3 {
     font-family: TeleNeoBold;
-    line-height: 62px;
-    font-size: 45pt;
+    line-height: 52px;
+    font-size: 40pt;
     margin-top: 11px;
-    padding-left: 30px;
     color: #e10074;
     font-weight: 600;
 }

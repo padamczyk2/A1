@@ -13,16 +13,31 @@ $data = [
     'campaign' => ['campaignId' => 'ZRgUy']
 ];
 
+$loader = new FilesystemLoader(__DIR__ . '/templates');
+$twig = new Environment($loader);
+
+if (md5($data['email']) !== $_GET['id']) {
+    //echo $twig->render('register.html', ['message_bold' => 'Niestety coś poszło nie tak.', 'message' => 'Prosimy o ponowną rejestrację..']);
+}
+
 $data_string = json_encode($data);
-$ch = curl_init($url);
+$handle = curl_init($url);
 
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-curl_setopt($ch, CURLOPT_HEADER, true);
-curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+curl_setopt($handle, CURLOPT_CUSTOMREQUEST, "POST");
+curl_setopt($handle, CURLOPT_HEADER, true);
+curl_setopt($handle, CURLOPT_HTTPHEADER, $header);
+curl_setopt($handle, CURLOPT_POSTFIELDS, $data_string);
+curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
 
-$output = curl_exec($ch);
+$output = curl_exec($handle);
+$httpCode = curl_getinfo($handle, CURLINFO_HTTP_CODE);
+curl_close($handle);
 
-echo $output;
+
+if ($httpCode === 202) {
+    echo $twig->render('register.html', ['message_bold' => 'Dziękujemy', 'message' => 'Twój adres mailowy jest poprawny.']);
+} else {
+    echo $twig->render('register.html', ['message_bold' => 'Niestety coś poszło nie tak.', 'message' => 'Prosimy o ponowną rejestrację..']);
+}
 
 ?>
