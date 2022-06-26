@@ -93,7 +93,7 @@ li {
 
 .txt1 {
     font-family: TeleNeo;
-    line-height: 35px;
+    line-height: 38px;
     font-size: 25pt;
     font-weight: 600;
     margin-top: 48px;
@@ -108,11 +108,8 @@ li {
 }
 
 .txt2 {
-    font-family: TeleNeoExtraBold;
-    line-height: 60px;
     font-size: 49pt;
     margin-top: 28px;
-    color: p;
 }
 
 .txt3 {

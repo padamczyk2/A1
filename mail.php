@@ -11,9 +11,7 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 
 $data = [
     'name' => $_GET['firstname'] . " " . $_GET['lastname'],
-    'email' => $_GET['email'],
-    'phone' => $_GET['phone'],
-    'position' => $_GET['position'],
+    'email' => $_GET['email']
 ];
 
 $query = http_build_query($data);
