@@ -73,6 +73,11 @@ span {
     font-size: 12pt;
 }
 
+span.bold {
+    font-family: TeleNeoBold;
+    font-size: 12pt;
+}
+
 span.required {
     font-size: 14pt;
 }
