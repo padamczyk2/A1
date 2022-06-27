@@ -36,10 +36,10 @@ $mail->Body = $twig->render('mail.html', ['query' => $query, 'hash' => $hash]);
 echo "*";
 
 if ($mail->Send()) {
-    echo 'ok';
-    //echo $twig->render('thanks.html');
+    header('Location: https://oncloudnine.cloud/ok.html');
+    exit;
 } else {
-    echo 'nok';
-    //echo $twig->render('thanks.html');
+    header('Location: https://oncloudnine.cloud/lp.html');
+    exit;
 }
 

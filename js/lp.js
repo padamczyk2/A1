@@ -9,8 +9,6 @@ $( document ).ready(function() {
         return regex.test(name);
     }
 
-    $("#modal-content").hide();
-    $("#modal").hide();
     $('#subscribe').prop('disabled', true);
     $(".inputes").change(function() {
            if($("#chbx1").is(':checked') && $("#chbx2").is(':checked') && isName($("#firstname").val()) && isName($("#lastname").val()) && isEmail($("#email").val())) {
