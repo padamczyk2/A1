@@ -78,6 +78,11 @@ span.bold {
     font-size: 12pt;
 }
 
+li,b {
+    font-family: TeleNeoBold;
+    font-size: 25pt;
+}
+
 span.required {
     font-size: 14pt;
 }
@@ -93,6 +98,14 @@ li {
 
 .txt1 {
     font-family: TeleNeo;
+    line-height: 38px;
+    font-size: 25pt;
+    font-weight: 600;
+    margin-top: 48px;
+}
+
+.txt1b {
+    font-family: TeleNeoBold;
     line-height: 35px;
     font-size: 25pt;
     font-weight: 600;
@@ -100,19 +113,15 @@ li {
 }
 
 .txt2 {
-    font-family: TeleNeoExtraBold;
-    line-height: 60px;
     font-size: 49pt;
     margin-top: 28px;
-    color: p;
 }
 
 .txt3 {
     font-family: TeleNeoBold;
-    line-height: 62px;
-    font-size: 45pt;
+    line-height: 52px;
+    font-size: 40pt;
     margin-top: 11px;
-    padding-left: 30px;
     color: #e10074;
     font-weight: 600;
 }
