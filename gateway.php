@@ -34,13 +34,10 @@ $output = curl_exec($handle);
 $httpCode = curl_getinfo($handle, CURLINFO_HTTP_CODE);
 curl_close($handle);
 
-
 if ($httpCode === 202) {
-    header('Location: https://oncloudnine.cloud/ok.html');
-    exit;
+    echo $twig->render('register.html', ['message_bold' => 'Thank you for registering.', 'message' => 'Your registration has been successful.']);
 } else {
-    header('Location: https://oncloudnine.cloud/ok.html');
-    exit;
+    echo $twig->render('register.html', ['message_bold' => 'Something went wrong.', 'message' => 'Please try again.']);
 }
 
 ?>

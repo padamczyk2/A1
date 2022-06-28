@@ -15,10 +15,8 @@ print_r($data);
 
 $query = http_build_query($data);
 $hash = md5($data['email']);
-echo "*";
 $loader = new FilesystemLoader(__DIR__ . '/templates');
 $twig = new Environment($loader);
-echo "*";
 $mail = new PHPMailer();
 $mail->IsSMTP();
 $mail->SMTPAuth = true;
@@ -33,13 +31,12 @@ $mail->setFrom('newsletter@oncloudnine.cloud', 'Newsletter T-mobile');
 $mail->AddAddress($data['email']);
 $mail->Subject = "Newsletter T-mobile";
 $mail->Body = $twig->render('mail.html', ['query' => $query, 'hash' => $hash]);
-echo "*";
 
 if ($mail->Send()) {
-    header('Location: https://oncloudnine.cloud/ok.html');
+    header('Location: https://oncloudnine.cloud/index.php?sent=true');
     exit;
 } else {
-    header('Location: https://oncloudnine.cloud/lp.html');
+    header('Location: https://oncloudnine.cloud/index.php?sent=false');
     exit;
 }
 
