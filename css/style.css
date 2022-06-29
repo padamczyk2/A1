@@ -1,17 +1,17 @@
 @font-face {
     font-family: TeleNeo;
-    src: url("../fonts/Tele Neo Office.ttf");
+    src: url("/fonts/Tele Neo Office.ttf");
 
 }
 
 @font-face {
     font-family: TeleNeoBold;
-    src: url("../fonts/Tele Neo Office Bold.ttf");
+    src: url("/fonts/Tele Neo Office Bold.ttf");
 }
 
 @font-face {
     font-family: TeleNeoExtraBold;
-    src: url("../fonts/Tele Neo Office Extrabold.ttf");
+    src: url("/fonts/Tele Neo Office Extrabold.ttf");
 }
 
 body {
