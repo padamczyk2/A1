@@ -31,6 +31,14 @@ body {
     font-size: 20pt !important;
 }
 
+.footer {
+    text-align: right;
+}
+
+.footer span {
+    padding-left: 15px;
+}
+
 .ml-min-30 {
     margin-left: -30px;
 }
@@ -84,7 +92,7 @@ li,b {
 }
 
 span.required {
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 li {
@@ -143,20 +151,27 @@ li {
 }
 
 .txt6 {
-    font-family: TeleNeo;
+    font-family: TeleNeoBold;
     font-size: 25pt;
     color: #e10074;
     margin-top: 55px;
     font-weight: 600;
+    display: inline;
 }
 
+.txt7 {
+    font-family: TeleNeo;
+    font-size: 25pt;
+    color: black;
+    font-weight: 600;
+    display: inline;
+}
 #modal {
     position: fixed;
     display: block;
     overflow: hidden;
     margin: auto;
     z-index: 2000;
-    margin-top: 10%;
 }
 
 #modal-content {
