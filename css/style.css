@@ -192,3 +192,8 @@ li {
     height: 3000px;
     z-index: 1000;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}

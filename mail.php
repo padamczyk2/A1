@@ -27,16 +27,15 @@ $mail->Password = "Adu893rjhds-23";
 $mail->CharSet = "UTF-8";
 $mail->SMTPDebug = 0;
 $mail->IsHTML(true);
-$mail->setFrom('newsletter@oncloudnine.cloud', 'Newsletter T-mobile');
+$mail->setFrom('newsletter@oncloudnine.cloud', 'T-Mobile Polska S.A.');
 $mail->AddAddress($data['email']);
-$mail->Subject = "Newsletter T-mobile";
+$mail->Subject = "T-Mobile Polska S.A.";
 $mail->Body = $twig->render('mail.html', ['query' => $query, 'hash' => $hash]);
 
 if ($mail->Send()) {
-    header('Location: https://oncloudnine.cloud/index.php?sent=true');
+    header('Location: https://oncloudnine.cloud/index.html');
     exit;
 } else {
-    header('Location: https://oncloudnine.cloud/index.php?sent=false');
     exit;
 }
 

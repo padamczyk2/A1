@@ -11,7 +11,7 @@ $( document ).ready(function() {
 
     $('#subscribe').prop('disabled', true);
     $(".inputes").change(function() {
-           if($("#chbx1").is(':checked') && $("#chbx2").is(':checked') && isName($("#firstname").val()) && isName($("#lastname").val()) && isEmail($("#email").val())) {
+           if($("#chbx1").is(':checked') && isName($("#firstname").val()) && isName($("#lastname").val()) && isEmail($("#email").val())) {
                $('#subscribe').prop('disabled', false);
            } else {
                $('#subscribe').prop('disabled', true);
