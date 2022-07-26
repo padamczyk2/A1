@@ -6,12 +6,12 @@ use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
 $url = 'https://api.getresponse.com/v3/contacts';
-$header = ["Content-Type: application/json; charset=utf-8", "X-Auth-Token: api-key u44lezjnbb2s7g8yxs009gyl22fr2i3b"];
+$header = ["Content-Type: application/json; charset=utf-8", "X-Auth-Token: api-key r3va6oolg39t8mgy4vj4swn41ubqwwhk"];
 
 $data = [
   'name' => $_GET['firstname'] . " " . $_GET['lastname'],
   'email' => $_GET['email'],
-  'campaign' => ['campaignId' => 'z9l7n']
+  'campaign' => ['campaignId' => 'V8FBZH1']
 ];
 
 $loader = new FilesystemLoader(__DIR__ . '/templates');

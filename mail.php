@@ -33,7 +33,7 @@ $mail->Subject = "T-Mobile Polska S.A.";
 $mail->Body = $twig->render('mail.html', ['query' => $query, 'hash' => $hash]);
 
 if ($mail->Send()) {
-    header('Location: https://oncloudnine.cloud/index.html');
+    header('Location: https://oncloudnine.cloud/index.php');
     exit;
 } else {
     exit;
