@@ -1,17 +1,17 @@
 @font-face {
     font-family: TeleNeo;
-    src: url("/fonts/Tele Neo Office.ttf");
+    src: url('../fonts/Tele Neo Office.ttf');
 
 }
 
 @font-face {
     font-family: TeleNeoBold;
-    src: url("/fonts/Tele Neo Office Bold.ttf");
+    src: url('../fonts/Tele Neo Office Bold.ttf');
 }
 
 @font-face {
     font-family: TeleNeoExtraBold;
-    src: url("/fonts/Tele Neo Office Extrabold.ttf");
+    src: url('../fonts/Tele Neo Office Extrabold.ttf');
 }
 
 body {
@@ -20,6 +20,9 @@ body {
     padding: 0px;
     margin: 0px;
     overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-align: center;
 }
 
 .input {
@@ -83,7 +86,9 @@ span {
 
 span.bold {
     font-family: TeleNeoBold;
-    font-size: 12pt;
+}
+a.blue_link {
+    color: blue;
 }
 
 li,b {
@@ -122,7 +127,6 @@ li {
 
 .txt2 {
     font-size: 49pt;
-    margin-top: 28px;
 }
 
 .txt3 {
