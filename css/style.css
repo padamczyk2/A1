@@ -14,6 +14,28 @@
     src: url('../fonts/Tele Neo Office Extrabold.ttf');
 }
 
+
+/* if desktop */
+.mobile_device_380px {
+    display: none;
+}
+.mobile_device_480px {
+    display: none;
+}
+
+
+/* if mobile device max width 380px */
+@media only screen and (max-device-width: 380px) {
+    .mobile_device_380px{display: block;}
+    .desktop {display: none;}
+}
+
+/* if mobile device max width 480px */
+@media only screen and (max-device-width: 480px) {
+    .mobile_device_480px{display: block;}
+    .desktop {display: none;}
+}
+
 body {
     background: white;
     font-family: TeleNeo;
@@ -22,16 +44,17 @@ body {
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    text-align: center;
 }
 
 .input {
-    width: 504px !important;
-    height: 75px !important;
+    width: available !important;
+    height: auto !important;
     border-radius: 10px !important;
     font-family: TeleNeo !important;
     color: black !important;
-    font-size: 20pt !important;
+    font-size: medium !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .footer {
@@ -61,7 +84,7 @@ input[type=submit] {
     border-width: 0px;
     background-color: #e10074;
     color: white;
-    font-family: TeleNeo !important;
+    font-family: TeleNeoBold !important;
     font-size: 20pt !important;
     font-weight: bold;
 }
@@ -87,9 +110,6 @@ span {
 span.bold {
     font-family: TeleNeoBold;
 }
-a.blue_link {
-    color: blue;
-}
 
 li,b {
     font-family: TeleNeoBold;
@@ -109,12 +129,37 @@ li {
     type: disk;
 }
 
+li.m {
+    font-family: TeleNeo;
+    line-height: 20px;
+    font-size: medium;
+    font-weight: 600;
+    margin-top: 10px;
+    type: disk;
+}
+
 .txt1 {
     font-family: TeleNeo;
     line-height: 38px;
     font-size: 25pt;
     font-weight: 600;
     margin-top: 48px;
+}
+
+.txt1m {
+    font-family: TeleNeo;
+    line-height:20px;
+    font-size:large;
+    margin-top: 20px;
+    word-break: break-word;
+}
+
+.txt1bm{
+    line-height:20px;
+    font-size:medium;
+    margin-top: 20px;
+    font-family: TeleNeoBold;
+    word-break: break-word;
 }
 
 .txt1b {
@@ -125,8 +170,14 @@ li {
     margin-top: 48px;
 }
 
+.txt2m {
+    font-size: 16pt;
+    margin-top: 7px;
+}
+
 .txt2 {
     font-size: 49pt;
+    margin-top: 20px;
 }
 
 .txt3 {
@@ -146,6 +197,14 @@ li {
     font-weight: 600;
 }
 
+.txt4m {
+    font-family: TeleNeo;
+    font-size: medium;
+    color: #e10074;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
 .txt5 {
     font-family: TeleNeo;
     line-height: 40px;
@@ -153,12 +212,27 @@ li {
     font-weight: 600;
     margin-top: 18px;
 }
+.txt5m {
+    font-family: TeleNeo;
+    line-height: 25px;
+    font-size: medium;
+    font-weight: 600;
+    margin-top: 10px;
+}
 
 .txt6 {
     font-family: TeleNeoBold;
     font-size: 25pt;
     color: #e10074;
     margin-top: 55px;
+    font-weight: 600;
+    display: inline;
+}
+.txt6m {
+    font-family: TeleNeoBold;
+    font-size: medium;
+    color: #e10074;
+    margin-top: 25px;
     font-weight: 600;
     display: inline;
 }
@@ -200,4 +274,7 @@ li {
 a {
     color: black;
     text-decoration: none;
+}
+a:hover {
+    color: blue;
 }
