@@ -13,6 +13,31 @@
     font-family: TeleNeoExtraBold;
     src: url('../fonts/Tele Neo Office Extrabold.ttf');
 }
+/* if desktop */
+.mobile_device_380px {
+    display: none;
+}
+.mobile_device_480px {
+    display: none;
+}
+
+
+/* if mobile device max width 380px */
+@media only screen and (max-device-width: 380px) {
+    .mobile_device_380px{display: block;}
+    .desktop {display: none;}
+}
+
+/* if mobile device max width 480px */
+@media only screen and (max-device-width: 480px) {
+    .mobile_device_480px{display: block;}
+    .desktop {display: none;}
+}
+
+.form-padd {
+    margin-left:10%;
+    margin-rigth:15%;
+}
 
 body {
     background: white;
@@ -26,7 +51,7 @@ body {
 
 .input {
     width: available !important;
-    height: auto !important;
+    height:60px !important;
     border-radius: 10px !important;
     font-family: TeleNeo !important;
     color: black !important;
@@ -43,8 +68,8 @@ body {
     padding-left: 15px;
 }
 
-.ml-min-30 {
-    margin-left: -30px;
+.ml-min-15 {
+    margin-left: -15px;
 }
 
 input[type=checkbox] {
@@ -222,7 +247,7 @@ li.m {
     font-weight: 600;
     display: inline;
 }
-#modal {
+#modal #modal.mobile{
     position: fixed;
     display: block;
     overflow: hidden;
@@ -230,7 +255,8 @@ li.m {
     z-index: 2000;
 }
 
-#modal-content {
+
+#modal-content #modal-content.mobile{
     background-color: black!important;
     filter:alpha(opacity=50);
     opacity: 0.5;
@@ -253,6 +279,8 @@ a {
     color: black;
     text-decoration: none;
 }
+
 a:hover {
-    color: blue;
+    color: blue; !important;
+    text-decoration: underline;
 }

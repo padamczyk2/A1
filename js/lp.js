@@ -50,4 +50,12 @@ $( document ).ready(function() {
         $("#modal-content").hide();
         $("#modal").hide();
     });
+
+    $("#thanks-modal.mobile").click(function () {
+        $('#firstname').val("");
+        $('#lastname').val("");
+        $('#email').val("");
+        $("#modal-content.mobile").hide();
+        $("#modal.mobile").hide();
+    });
 });
