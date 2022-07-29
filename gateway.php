@@ -9,9 +9,9 @@ $url = 'https://api.getresponse.com/v3/contacts';
 $header = ["Content-Type: application/json; charset=utf-8", "X-Auth-Token: api-key r3va6oolg39t8mgy4vj4swn41ubqwwhk"];
 
 $data = [
-  'name' => $_GET['firstname'] . " " . $_GET['lastname'],
+  'name' => $_GET['name'],
   'email' => $_GET['email'],
-  'campaign' => ['campaignId' => 'V8FBZH1']
+  'campaign' => ['campaignId' => 'r8YVr']
 ];
 
 $loader = new FilesystemLoader(__DIR__ . '/templates');
