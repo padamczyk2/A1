@@ -247,6 +247,64 @@ li.m {
     font-weight: 600;
     display: inline;
 }
+
+.txt8 {
+    margin-top: 80px;
+    margin-bottom: 52px;
+    font-family: TeleNeo;
+    font-size: 30pt;
+    line-height: 42px;
+    color: black;
+    font-weight: 200;
+    display: block;
+}
+
+.txt9 {
+    font-family: TeleNeo;
+    font-size: 23pt;
+    line-height: 30px;
+    color: black;
+    font-weight: 200;
+    display: inline;
+}
+
+.txt9 b {
+    font-family: TeleNeoBold;
+    font-size: 22pt;
+    line-height: 30px;
+    color: black;
+    font-weight: 600;
+    display: inline;
+}
+
+.txt10 {
+    margin-top: 85px;
+    margin-bottom: 55px;
+    font-family: TeleNeoBold;
+    font-size: 46pt;
+    color: #e10074;
+    font-weight: 600;
+    display: block;
+}
+
+.txt11 {
+    margin-top: 80px;
+    margin-bottom: 52px;
+    font-family: TeleNeoBold;
+    font-size: 23pt;
+    line-height: 30px;
+    color: #e10074;
+    font-weight: 600;
+    display: block;
+}
+
+.pink {
+    font-family: TeleNeoBold;
+    font-size: 23pt;
+    color: #e10074;
+    font-weight: 400;
+}
+
 a {
     color: black;
     text-decoration: none;
