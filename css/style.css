@@ -256,6 +256,16 @@ a:hover {
     color: blue !important;
     text-decoration: underline;
 }
+
+.link-blue a {
+    color: black;
+    text-decoration: none;
+}
+.link-blue a:hover {
+    color:blue !important;
+    text-decoration:underline;
+}
+
 #modal #modal.mobile{
     position: fixed;
     display: block;
