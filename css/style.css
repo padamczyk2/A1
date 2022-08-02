@@ -408,3 +408,11 @@ a:hover {
     height: 3000px;
     z-index: 1000;
 }
+
+a.sm {
+    width: 35px;
+    height: 32px;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
